@@ -1,0 +1,32 @@
+{
+    "name": "dedust_trade",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "rm -rf build && npx tsc && node build/index.js",
+        "build:docker": "docker build -t andryaschuk/dermo . --platform linux/amd64"
+    },
+    "dependencies": {
+        "@dedust/sdk": "^0.8.7",
+        "@orbs-network/ton-access": "^2.3.3",
+        "@supabase/supabase-js": "^2.43.5",
+        "@ton-api/client": "^0.0.1-beta.2",
+        "@ton-api/streaming": "^0.0.1-beta.0",
+        "@ton/core": "^0.56.3",
+        "@ton/crypto": "^3.2.0",
+        "@ton/ton": "^13.11.2",
+        "axios": "^1.7.2",
+        "dayjs": "^1.11.11",
+        "lodash": "^4.17.21",
+        "node-telegram-bot-api": "^0.66.0",
+        "ws": "^8.17.1"
+    },
+    "devDependencies": {
+        "@types/lodash": "^4.17.5",
+        "@types/node-telegram-bot-api": "^0.64.7",
+        "dotenv": "^16.4.5",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.4.5"
+    }
+}
