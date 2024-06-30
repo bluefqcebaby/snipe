@@ -12,6 +12,6 @@ export const swapToJetton = async ({ tonVault, sender, pool, amountInTon }: ISwa
     await tonVault.sendSwap(sender, {
         amount: toNano(amountInTon),
         poolAddress: pool.address,
-        gasAmount: toNano('0.25'),
+        gasAmount: toNano('0.245'),
     });
 };

@@ -10,7 +10,7 @@ interface ISwapToTonParams {
 }
 
 export const swapToTon = async ({ pool, sender, vault, wallet, amountInJetton }: ISwapToTonParams) => {
-    await wallet.sendTransfer(sender, toNano('0.3'), {
+    await wallet.sendTransfer(sender, toNano('0.31'), {
         amount: toNano(amountInJetton),
         destination: vault.address,
         responseAddress: sender.address,
